@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.fbp.engine.FinalIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.044 s -- in com.fbp.engine.FinalIntegrationTest

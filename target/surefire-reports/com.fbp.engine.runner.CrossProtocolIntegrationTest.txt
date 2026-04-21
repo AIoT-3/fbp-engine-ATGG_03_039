@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.fbp.engine.runner.CrossProtocolIntegrationTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 11.62 s -- in com.fbp.engine.runner.CrossProtocolIntegrationTest

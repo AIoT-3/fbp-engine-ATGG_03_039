@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.fbp.engine.node.impl.CollectorNodeTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.004 s -- in com.fbp.engine.node.impl.CollectorNodeTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.005 s -- in com.fbp.engine.node.impl.CollectorNodeTest

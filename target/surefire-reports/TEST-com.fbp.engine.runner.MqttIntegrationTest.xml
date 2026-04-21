@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" version="3.0.1" name="com.fbp.engine.runner.MqttIntegrationTest" time="15.919" tests="4" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/chosun-nhn39/fbp-engine/target/test-classes:/Users/chosun-nhn39/fbp-engine/target/classes:/Users/chosun-nhn39/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.0/junit-jupiter-5.11.0.jar:/Users/chosun-nhn39/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/Users/chosun-nhn39/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/chosun-nhn39/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/Users/chosun-nhn39/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/chosun-nhn39/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:/Users/chosun-nhn39/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.0/junit-jupiter-engine-5.11.0.jar:/Users/chosun-nhn39/.m2/repository/org/junit/platform/junit-platform-engine/1.11.0/junit-platform-engine-1.11.0.jar:/Users/chosun-nhn39/.m2/repository/org/projectlombok/lombok/1.18.44/lombok-1.18.44.jar:/Users/chosun-nhn39/.m2/repository/org/mockito/mockito-junit-jupiter/5.20.0/mockito-junit-jupiter-5.20.0.jar:/Users/chosun-nhn39/.m2/repository/org/mockito/mockito-core/5.20.0/mockito-core-5.20.0.jar:/Users/chosun-nhn39/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.7/byte-buddy-agent-1.17.7.jar:/Users/chosun-nhn39/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/chosun-nhn39/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/chosun-nhn39/.m2/repository/ch/qos/logback/logback-classic/1.5.32/logback-classic-1.5.32.jar:/Users/chosun-nhn39/.m2/repository/ch/qos/logback/logback-core/1.5.32/logback-core-1.5.32.jar:/Users/chosun-nhn39/.m2/repository/org/eclipse/paho/org.eclipse.paho.mqttv5.client/1.2.5/org.eclipse.paho.mqttv5.client-1.2.5.jar:/Users/chosun-nhn39/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar:/Users/chosun-nhn39/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/Users/chosun-nhn39/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/Users/chosun-nhn39/.m2/repository/net/bytebuddy/byte-buddy/1.14.9/byte-buddy-1.14.9.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Seoul"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="KR"/>
+    <property name="sun.boot.library.path" value="/Users/chosun-nhn39/Library/Java/JavaVirtualMachines/temurin-21.0.8/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/chosun-nhn39/fbp-engine/target/surefire/surefirebooter-20260421154500322_3.jar /Users/chosun-nhn39/fbp-engine/target/surefire 2026-04-21T15-45-00_226-jvmRun1 surefire-20260421154500322_1tmp surefire_0-20260421154500322_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/chosun-nhn39/fbp-engine/target/test-classes:/Users/chosun-nhn39/fbp-engine/target/classes:/Users/chosun-nhn39/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.0/junit-jupiter-5.11.0.jar:/Users/chosun-nhn39/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.0/junit-jupiter-api-5.11.0.jar:/Users/chosun-nhn39/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/chosun-nhn39/.m2/repository/org/junit/platform/junit-platform-commons/1.11.0/junit-platform-commons-1.11.0.jar:/Users/chosun-nhn39/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/chosun-nhn39/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.0/junit-jupiter-params-5.11.0.jar:/Users/chosun-nhn39/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.0/junit-jupiter-engine-5.11.0.jar:/Users/chosun-nhn39/.m2/repository/org/junit/platform/junit-platform-engine/1.11.0/junit-platform-engine-1.11.0.jar:/Users/chosun-nhn39/.m2/repository/org/projectlombok/lombok/1.18.44/lombok-1.18.44.jar:/Users/chosun-nhn39/.m2/repository/org/mockito/mockito-junit-jupiter/5.20.0/mockito-junit-jupiter-5.20.0.jar:/Users/chosun-nhn39/.m2/repository/org/mockito/mockito-core/5.20.0/mockito-core-5.20.0.jar:/Users/chosun-nhn39/.m2/repository/net/bytebuddy/byte-buddy-agent/1.17.7/byte-buddy-agent-1.17.7.jar:/Users/chosun-nhn39/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/chosun-nhn39/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/chosun-nhn39/.m2/repository/ch/qos/logback/logback-classic/1.5.32/logback-classic-1.5.32.jar:/Users/chosun-nhn39/.m2/repository/ch/qos/logback/logback-core/1.5.32/logback-core-1.5.32.jar:/Users/chosun-nhn39/.m2/repository/org/eclipse/paho/org.eclipse.paho.mqttv5.client/1.2.5/org.eclipse.paho.mqttv5.client-1.2.5.jar:/Users/chosun-nhn39/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.17.0/jackson-databind-2.17.0.jar:/Users/chosun-nhn39/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.17.0/jackson-annotations-2.17.0.jar:/Users/chosun-nhn39/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.17.0/jackson-core-2.17.0.jar:/Users/chosun-nhn39/.m2/repository/net/bytebuddy/byte-buddy/1.14.9/byte-buddy-1.14.9.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/chosun-nhn39"/>
+    <property name="user.language" value="ko"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-07-15"/>
+    <property name="java.home" value="/Users/chosun-nhn39/Library/Java/JavaVirtualMachines/temurin-21.0.8/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/chosun-nhn39/fbp-engine"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/chosun-nhn39/fbp-engine/target/surefire/surefirebooter-20260421154500322_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com"/>
+    <property name="java.runtime.version" value="21.0.8+9-LTS"/>
+    <property name="user.name" value="chosun-nhn39"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.7.3"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.8+9"/>
+    <property name="localRepository" value="/Users/chosun-nhn39/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/3_/rj1kq0hx4nd_ym1_7wzq92k00000gn/T/"/>
+    <property name="java.version" value="21.0.8"/>
+    <property name="user.dir" value="/Users/chosun-nhn39/fbp-engine"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/chosun-nhn39/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.8+9-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16|lx.astxsvc.com|*.lx.astxsvc.com"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="testSubscriberToPublisherPipeline" classname="com.fbp.engine.runner.MqttIntegrationTest" time="2.804">
+    <system-out><![CDATA[15:45:16.989 [main] INFO com.fbp.engine.core.FlowEngine -- [Engine] 플로우 'flow-1' 등록됨
+15:45:17.310 [MQTT Call: sub-1-1776753916987] INFO com.fbp.engine.node.impl.MqttSubscriberNode -- [sub] MQTT Broker 연결 완료
+15:45:17.311 [main] INFO com.fbp.engine.node.ProtocolNode -- [sub] 연결 성공
+15:45:17.315 [main] INFO com.fbp.engine.node.impl.MqttPublisherNode -- [pub] MQTT Broker(tcp://localhost:1883) 연결 시도
+15:45:17.632 [main] INFO com.fbp.engine.node.impl.MqttPublisherNode -- [pub] MQTT Broker 연결 완료 (Publisher)
+15:45:17.633 [main] INFO com.fbp.engine.node.ProtocolNode -- [pub] 연결 성공
+15:45:17.633 [main] INFO com.fbp.engine.core.FlowEngine -- [Engine] 플로우 'flow-1' 시작됨
+[transform] processing message
+[pub] processing message
+15:45:19.145 [MQTT Call: sub-1-1776753916987] INFO com.fbp.engine.node.impl.MqttSubscriberNode -- [sub] 메시지 수신 및 전송 완료: Message(id=8980c7e8-c4a2-427f-803b-1beb5c6c0215, payload={data=123, topic=test/in, mqttTimestamp=1776753919145}, timestamp=1776753919145)
+]]></system-out>
+  </testcase>
+  <testcase name="testMultiTopicSubscription" classname="com.fbp.engine.runner.MqttIntegrationTest" time="4.358">
+    <system-out><![CDATA[15:45:19.778 [main] INFO com.fbp.engine.core.FlowEngine -- [Engine] 플로우 'flow-2' 등록됨
+15:45:20.097 [MQTT Call: sub-2-1776753919778] INFO com.fbp.engine.node.impl.MqttSubscriberNode -- [sub] MQTT Broker 연결 완료
+15:45:20.098 [main] INFO com.fbp.engine.node.ProtocolNode -- [sub] 연결 성공
+15:45:20.099 [main] INFO com.fbp.engine.core.FlowEngine -- [Engine] 플로우 'flow-2' 시작됨
+[collector] processing message
+15:45:21.610 [MQTT Call: sub-2-1776753919778] INFO com.fbp.engine.node.impl.MqttSubscriberNode -- [sub] 메시지 수신 및 전송 완료: Message(id=9318b4d0-4228-4e86-bd73-cf9c032bb6c4, payload={value=20, topic=multi_test_1776753919777/temp, mqttTimestamp=1776753921610}, timestamp=1776753921610)
+15:45:21.611 [MQTT Call: sub-2-1776753919778] INFO com.fbp.engine.node.impl.MqttSubscriberNode -- [sub] 메시지 수신 및 전송 완료: Message(id=0aaf84ad-f502-4487-a108-f692b38521b3, payload={value=50, topic=multi_test_1776753919777/humidity, mqttTimestamp=1776753921611}, timestamp=1776753921611)
+[collector] processing message
+]]></system-out>
+  </testcase>
+  <testcase name="testQos1DeliveryGuarantee" classname="com.fbp.engine.runner.MqttIntegrationTest" time="4.386">
+    <system-out><![CDATA[15:45:24.151 [main] INFO com.fbp.engine.core.FlowEngine -- [Engine] 플로우 'flow-3' 등록됨
+15:45:24.473 [MQTT Call: sub-3-1776753924151] INFO com.fbp.engine.node.impl.MqttSubscriberNode -- [sub] MQTT Broker 연결 완료
+15:45:24.474 [main] INFO com.fbp.engine.node.ProtocolNode -- [sub] 연결 성공
+15:45:24.474 [main] INFO com.fbp.engine.core.FlowEngine -- [Engine] 플로우 'flow-3' 시작됨
+[collector] processing message
+15:45:25.982 [MQTT Call: sub-3-1776753924151] INFO com.fbp.engine.node.impl.MqttSubscriberNode -- [sub] 메시지 수신 및 전송 완료: Message(id=e4c2b413-c4f4-4313-9890-b10a7a78c4f4, payload={topic=qos1/test/1776753924150, mqttTimestamp=1776753925981, id=0}, timestamp=1776753925982)
+15:45:25.983 [MQTT Call: sub-3-1776753924151] INFO com.fbp.engine.node.impl.MqttSubscriberNode -- [sub] 메시지 수신 및 전송 완료: Message(id=3ba203e9-b006-4266-8f8b-aabec08ab3c9, payload={topic=qos1/test/1776753924150, mqttTimestamp=1776753925982, id=1}, timestamp=1776753925983)
+[collector] processing message
+[collector] processing message
+15:45:25.983 [MQTT Call: sub-3-1776753924151] INFO com.fbp.engine.node.impl.MqttSubscriberNode -- [sub] 메시지 수신 및 전송 완료: Message(id=e212675a-1486-45e1-b210-95861aef062b, payload={topic=qos1/test/1776753924150, mqttTimestamp=1776753925983, id=2}, timestamp=1776753925983)
+[collector] processing message
+15:45:25.984 [MQTT Call: sub-3-1776753924151] INFO com.fbp.engine.node.impl.MqttSubscriberNode -- [sub] 메시지 수신 및 전송 완료: Message(id=588574a5-55ea-46f2-8c25-ad924cea4497, payload={topic=qos1/test/1776753924150, mqttTimestamp=1776753925984, id=3}, timestamp=1776753925984)
+[collector] processing message
+15:45:25.986 [MQTT Call: sub-3-1776753924151] INFO com.fbp.engine.node.impl.MqttSubscriberNode -- [sub] 메시지 수신 및 전송 완료: Message(id=4fdb4188-618b-401e-97e2-593b35887994, payload={topic=qos1/test/1776753924150, mqttTimestamp=1776753925986, id=4}, timestamp=1776753925986)
+[collector] processing message
+15:45:25.987 [MQTT Call: sub-3-1776753924151] INFO com.fbp.engine.node.impl.MqttSubscriberNode -- [sub] 메시지 수신 및 전송 완료: Message(id=a174b6db-9477-4958-9a09-efc31f3da43d, payload={topic=qos1/test/1776753924150, mqttTimestamp=1776753925987, id=5}, timestamp=1776753925987)
+[collector] processing message
+15:45:25.988 [MQTT Call: sub-3-1776753924151] INFO com.fbp.engine.node.impl.MqttSubscriberNode -- [sub] 메시지 수신 및 전송 완료: Message(id=d4af3427-05d7-4f72-b933-b12d0d4b5b44, payload={topic=qos1/test/1776753924150, mqttTimestamp=1776753925988, id=6}, timestamp=1776753925988)
+15:45:25.990 [MQTT Call: sub-3-1776753924151] INFO com.fbp.engine.node.impl.MqttSubscriberNode -- [sub] 메시지 수신 및 전송 완료: Message(id=1b128dd5-0a77-4a05-a706-3d4b8f83f676, payload={topic=qos1/test/1776753924150, mqttTimestamp=1776753925990, id=7}, timestamp=1776753925990)
+[collector] processing message
+15:45:25.991 [MQTT Call: sub-3-1776753924151] INFO com.fbp.engine.node.impl.MqttSubscriberNode -- [sub] 메시지 수신 및 전송 완료: Message(id=d95d7662-c44c-4460-bcbb-ee40a7c44323, payload={topic=qos1/test/1776753924150, mqttTimestamp=1776753925991, id=8}, timestamp=1776753925991)
+[collector] processing message
+[collector] processing message
+15:45:25.993 [MQTT Call: sub-3-1776753924151] INFO com.fbp.engine.node.impl.MqttSubscriberNode -- [sub] 메시지 수신 및 전송 완료: Message(id=c2ec5847-376e-40ba-b620-273a7e512eb5, payload={topic=qos1/test/1776753924150, mqttTimestamp=1776753925993, id=9}, timestamp=1776753925993)
+]]></system-out>
+  </testcase>
+  <testcase name="testReconnection" classname="com.fbp.engine.runner.MqttIntegrationTest" time="4.366">
+    <system-out><![CDATA[15:45:28.532 [main] INFO com.fbp.engine.core.FlowEngine -- [Engine] 플로우 'flow-4' 등록됨
+15:45:28.855 [MQTT Call: sub-4-1776753928531] INFO com.fbp.engine.node.impl.MqttSubscriberNode -- [sub] MQTT Broker 연결 완료
+15:45:28.856 [main] INFO com.fbp.engine.node.ProtocolNode -- [sub] 연결 성공
+15:45:28.857 [main] INFO com.fbp.engine.core.FlowEngine -- [Engine] 플로우 'flow-4' 시작됨
+[collector] processing message
+15:45:30.364 [MQTT Call: sub-4-1776753928531] INFO com.fbp.engine.node.impl.MqttSubscriberNode -- [sub] 메시지 수신 및 전송 완료: Message(id=ccac37e6-8021-4773-b33d-2af143e343c7, payload={topic=reconnect/test, mqttTimestamp=1776753930364, status=ok}, timestamp=1776753930364)
+]]></system-out>
+  </testcase>
+</testsuite>

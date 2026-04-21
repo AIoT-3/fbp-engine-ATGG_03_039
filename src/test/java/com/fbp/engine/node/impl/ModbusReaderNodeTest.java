@@ -62,12 +62,15 @@ class ModbusReaderNodeTest {
     @DisplayName("통합 테스트")
     class IntegrationTest {
         private ModbusTcpSimulator simulator;
+        private static int portCounter = 27020;
+        private int currentPort;
 
         @BeforeEach
         void setUp() throws Exception {
-            simulator = new ModbusTcpSimulator(5020, 10);
+            currentPort = portCounter++;
+            simulator = new ModbusTcpSimulator(currentPort, 10);
             simulator.start();
-            Thread.sleep(100);
+            Thread.sleep(200);
 
             simulator.setRegister(0, 250);
             simulator.setRegister(1, 600);
@@ -84,7 +87,7 @@ class ModbusReaderNodeTest {
         private Map<String, Object> createBaseConfig() {
             Map<String, Object> config = new HashMap<>();
             config.put("host", "localhost");
-            config.put("port", 5020);
+            config.put("port", currentPort);
             config.put("slaveId", 1);
             config.put("startAddress", 0);
             config.put("count", 2);
@@ -152,7 +155,6 @@ class ModbusReaderNodeTest {
             ModbusReaderNode node = new ModbusReaderNode("reader", config);
             CollectorNode collector = new CollectorNode("collector");
 
-            // 💡 Connection 객체 생성 및 연결
             Connection connection = new Connection("outToIn");
             connection.setTarget(collector.getInputPort("in"));
             node.getOutputPort("out").connect(connection);
@@ -162,7 +164,6 @@ class ModbusReaderNodeTest {
             node.process(new Message(new HashMap<>()));
             Thread.sleep(100);
 
-            // 💡 메시지 수동 전달
             Message processedMessage = connection.poll();
             if (processedMessage != null) {
                 collector.process(processedMessage);
@@ -186,7 +187,6 @@ class ModbusReaderNodeTest {
             ModbusReaderNode node = new ModbusReaderNode("reader", config);
             CollectorNode errorCollector = new CollectorNode("errorCollector");
 
-            // 💡 Connection 객체 생성 및 연결 (error 포트)
             Connection errorConnection = new Connection("errorToIn");
             errorConnection.setTarget(errorCollector.getInputPort("in"));
             node.getOutputPort("error").connect(errorConnection);
@@ -196,7 +196,6 @@ class ModbusReaderNodeTest {
             node.process(new Message(Map.of("triggerId", 999)));
             Thread.sleep(100);
 
-            // 💡 에러 메시지 수동 전달
             Message processedMessage = errorConnection.poll();
             if (processedMessage != null) {
                 errorCollector.process(processedMessage);
